@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <nav>
+      <img src="img\Logo-RevoU.original.png" alt="Logo" class="Logo" />
+      <ul class="nav-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Profile</a></li>
+        <li><a href="#">Achievement</a></li>
+        <li><a href="#">Message Us</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <header>
+      <h1>Hi, welcome to our website</h1>
+      <h4>Please Enjoy</h4>
+      <img src="img\RoadMap.jpeg" />
+      <hr />
+    </header>
+
+    <br />
+
+    <h3 style="text-align: center; color: #333; font-size: 24px">Our facilitations</h3>
+    <br />
+    <div class="facilitations">
+      <div>
+        <div class="circle" style="background-image: url('img/iot.jpg')"></div>
+        <h4>Internet Of Things</h4>
+      </div>
+      <div>
+        <div class="circle" style="background-image: url('img/machine learning.jpg')"></div>
+        <h4>Machine Learning</h4>
+      </div>
+      <div>
+        <div class="circle" style="background-image: url('img/databases.jpg')"></div>
+        <h4>Databases</h4>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="form-container">
+      <form>
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td><input type="text" name="name" placeholder="Masukan Nama" required /></td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td><input type="date" name="birthdate" required /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <label for="male"> <input type="radio" name="gender" value="pria" id="male" required /> Laki-laki </label>
+              <label for="female"> <input type="radio" name="gender" value="wanita" id="female" required /> Perempuan </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Message</td>
+            <td><textarea name="message" rows="4" placeholder="Masukan pesan"></textarea></td>
+          </tr>
+        </table>
+        <button type="submit">Kirim</button>
+      </form>
+      <div class="result-container">
+        <div id="output"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
